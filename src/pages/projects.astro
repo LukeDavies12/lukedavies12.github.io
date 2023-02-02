@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import { getCollection } from 'astro:content';
+const projectsEntries = await getCollection('projects');
+---
+
+<BaseLayout title="LukeDavies.dev | Projects" headerText="Projects">
+    <dl class="divide-y-2 divide-opacity-50 divide-neutral-400">
+        {projectsEntries.map(projectsEntry => (
+            <div class="flex flex-col py-5">
+                <dt class="mb-1">
+                    <span class="font-bold text-lg lg:text-xl">{projectsEntry.data.title}</span>
+                    <span class="text-sm text-neutral-700">
+                        {projectsEntry.data.date.toISOString().split('T')[0]}    
+                    </span>
+                    <br />
+                    <span class="text-neutral-800 leading-tight">{projectsEntry.data.description}</span>
+                </dt>
+                <dd class="text-lg"><a href={`/projects/${projectsEntry.slug}`}>/{projectsEntry.slug}</a></dd>
+            </div>
+        ))}
+    </dl>
+</BaseLayout>
