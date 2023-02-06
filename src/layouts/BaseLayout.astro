@@ -1,5 +1,5 @@
 ---
-import "@fontsource/inter";
+import "@fontsource/ibm-plex-serif";
 
 const { title, headerText } = Astro.props;
 ---
@@ -13,9 +13,9 @@ const { title, headerText } = Astro.props;
     <title>{title}</title>
 </head>
 <body>
-    <div class="container px-2 mx-auto my-9">
+    <div class="container px-2 mx-auto my-4">
         <article>
-            <nav class="flex gap-5 my-8 px-5 py-2 bg-neutral-100 rounded-xl">
+            <nav class="flex gap-4 my-5">
                 <a href="/">Home</a>
                 <a href="/about">About</a>
                 <a href="/projects">Projects</a>   
@@ -30,12 +30,16 @@ const { title, headerText } = Astro.props;
 
 <style is:global>
     h1 {
-        @apply font-extrabold text-2xl lg:text-3xl;
+        @apply font-bold text-3xl lg:text-4xl;
+    }
+
+    h2 {
+        @apply font-bold text-xl lg:text-2xl mb-2;
     }
 
     html {
-        @apply text-lg;
-        font-family: "Inter", sans-serif;
+        font-family: "IBM Plex Serif", serif;
+        @apply text-lg;    
     }
     
     article {
@@ -43,12 +47,12 @@ const { title, headerText } = Astro.props;
     }
 
     a {
-        @apply text-blue-900 underline;
+        @apply text-neutral-600 underline;
     }
 </style>
 
 <style>
     nav a {
-        @apply p-2;
+        @apply p-1;
     }
 </style>

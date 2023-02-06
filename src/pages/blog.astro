@@ -5,13 +5,12 @@ import { getCollection } from 'astro:content';
 const blogEntries = await getCollection('blog');
 ---
 
-<BaseLayout>
-  <h1>Blog</h1>
-  <ul>
+<BaseLayout title="Luke Davies | Blog" headerText="Blog">
+  <ul class="list-disc list-inside">
     {blogEntries.map(blogPostEntry => (
       <li>
         <a href={`/blog/${blogPostEntry.slug}`}>{blogPostEntry.data.title}</a>
-        <time datetime={blogPostEntry.data.date.toISOString()}>
+        <time datetime={blogPostEntry.data.date.toISOString()} class="text-xs text-neutral-700">
           {blogPostEntry.data.date.toDateString()}
         </time>
       </li>

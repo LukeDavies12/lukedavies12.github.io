@@ -4,12 +4,6 @@ description: A collection of RSS feeds for Software professionals and Computer S
 date: 2023-01-31
 liveLink: https://compscifeeds-site.vercel.app/
 githubLink: https://github.com/LukeDavies12/compscifeeds-site
-tags: 
-    - astro
-    - astro ssr
-    - tailwind
-    - solid js
-    - rss
 ---
 
 ![Comp Sci Feeds Demo Image](/csf-img.png)

@@ -2,6 +2,30 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title="LukeDavies.dev | About" headerText="About Me">
-
+<BaseLayout title="Luke Davies | About" headerText="About Me">
+    <div class="flex flex-col gap-8">
+        <p>
+            I’m majoring in computer science and playing football at
+            Briar Cliff University in Sioux City, Iowa. I’m a football captain, 
+            a member of our Men’s Faith Club, and an RA. 
+        </p>
+        <hr>
+        <p>
+            In computer science, I’m interested in distributed apps and automation with software.
+            And currently, I’m freelancing with Golang, Python, and Jamstack services on <a href="https://www.upwork.com/freelancers/~01b56fec140fa5db7b">Upwork</a>. 
+            And will intern for Empirical Foods this upcoming summer.
+        </p>
+        <p>
+            Outside of school, football, and work, I enjoy playing cards, watching sports with my family,
+            and hanging out with my teammates. Also, I like to travel around the states with 
+            my girlfriend and love a good boxing movie.
+        </p>
+        <div>
+            <a href="mailto:luketdavies12@gmail.com">
+                <button 
+                class="px-8 py-2 font-medium text-white bg-blue-500 rounded-md mb-2">Email me (luketdavies12@gmail)</button> <br />
+            </a>
+            <a href="/projects">Projects</a>
+        </div>
+    </div>
 </BaseLayout>

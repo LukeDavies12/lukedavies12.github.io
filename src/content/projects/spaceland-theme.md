@@ -4,9 +4,6 @@ description: A Visual Studio Code theme for the wonderers. Fine-tuned for those 
 date: 2019-06-25
 liveLink: https://marketplace.visualstudio.com/items?itemName=LukeDavies12.spaceland&ssr=false
 githubLink: https://github.com/LukeDavies12/spaceland-vs-code-theme
-tags: 
-    - dev tools
-    - VS-Code
 ---
 
 ![Spaceland Theme Demo Image](/spacelandDemo-img.png)
